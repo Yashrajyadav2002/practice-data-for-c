@@ -24,8 +24,8 @@ int main(){
      }
      return 0;
 
-
-do while loop concept ?
+    }
+//do while loop concept ?
 
 int main(){
     int a=1;
