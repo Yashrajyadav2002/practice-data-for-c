@@ -1,5 +1,6 @@
 
 import  { useState } from 'react';
+import State from './Components/State';
 
 function Counter() {
   const [count, setCount] = useState(0); 
@@ -26,6 +27,10 @@ function Counter() {
       <button onClick={increase} style={{ marginRight: '20px' }}>Increase</button>
       <button onClick={decrease} style={{marginRight:'20px'}}>Decrease</button>
       <button onClick={reset}>Reset</button>
+
+
+      <State/>
+
     </div>
   );
 }
