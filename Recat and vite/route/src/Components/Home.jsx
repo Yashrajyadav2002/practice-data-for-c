@@ -5,7 +5,7 @@ function Home(){
         <>
         <h1>This is Home page</h1>
         <ul>
-            <li> <Link to="/About"></Link></li>
+            <li> <Link to="/About">About </Link></li>
         </ul>
         
         
