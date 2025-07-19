@@ -6,7 +6,7 @@ import Cart from "./Components/Cart"
 function App(){
   return(
     <>
-    <h1>This is App page</h1>
+
     <Routes>
       <Route index element={<Home/>} />
       <Route path="/about" element={<About/>} />
