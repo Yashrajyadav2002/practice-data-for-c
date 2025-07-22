@@ -9,6 +9,7 @@ function App (){
   }
   function fun2(){
     setAge(22)
+    
   }
   return(
     <>
