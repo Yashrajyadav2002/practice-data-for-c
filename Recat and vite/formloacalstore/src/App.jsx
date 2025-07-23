@@ -1,6 +1,8 @@
+import { Localfrm } from "./Components/Localform"
 function App (){
   return(
     <>
+    <Localfrm/>
     </>
   )
 }
