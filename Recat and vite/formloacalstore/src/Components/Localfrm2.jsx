@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
  export function Localfrm(){
     let[frmdata,setFrmdata] = useState({
         username:"" , email:"",password:""
     })
     let {showdata,setshowdata}= useState({})
+    let navigator = useNavigate()
 
     function takeinput(e){
         let {name,value}=e.target
@@ -14,8 +16,7 @@ import { useState } from "react";
         e.preventDefault()
         console.log(frmdata)
         localStorage.setItem('userdata',JSON.stringify(frmdata))
-        let show = JSON.parse(localStorage.getItem('userdata'))
-        setshowdata(show)
+        navigator('/localshow')
     }
     return(
         <>
@@ -33,10 +34,8 @@ import { useState } from "react";
 
             <input type="submit" />
         </form>
+        
 
-        <h1>username - {showdata.username}</h1>
-        <h1>email - {showdata.email}</h1>
-        <h1>password - {showdata.password}</h1>
         
         </>
 
