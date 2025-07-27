@@ -2,6 +2,7 @@ import Home from "./Components/Home"
 import About from "./Components/About"
 import Contact from "./Components/Contact"
 import { useState } from "react"
+import Clickfile from "./Components/Clickfile"
 
 function App (){
   let user={
@@ -21,6 +22,7 @@ function App (){
     <button onClick={()=>changename("jadam")}>change</button>
     <h2>{number}</h2>
     <button onClick={()=>changenum(98746513)}>change num</button>
+    <Clickfile/>
     
     </>
   )
