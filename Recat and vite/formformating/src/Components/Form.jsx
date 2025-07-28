@@ -7,6 +7,7 @@ function Form (){
     let [email,setemail] = useState("")
     let [pass,setpass] = useState("")
     let [address,setaddress] = useState("")
+    let [education,seteducation] = useState("")
     function handleinput(e){
         console.log(e.target.value)
         setValue(e.target.value)
@@ -31,9 +32,14 @@ function Form (){
             <input type="number" onChange={(e)=>setpass(e.target.value)} /> <br /> <br />
 
             <label htmlFor="">Address</label>
-            <input type="text" onChange={(e)=>setaddress(e.target.value)} /> <br />
+            <input type="text" onChange={(e)=>setaddress(e.target.value)} /> <br /> <br />
+
+            <label htmlFor="">Education</label>
+            <input type="text" onChange={(e)=>seteducation(e.target.value)} /> <br />
+
 
             <input type="submit" />
+
         </form>
         <h1>{value}</h1>
         <h1>{age}</h1>
@@ -41,8 +47,10 @@ function Form (){
         <h1>{email}</h1>
         <h1>{pass}</h1>
         <h1>{address}</h1>
+        <h1>{education}</h1>
         
         </>
     )
+    
 }
 export default Form
