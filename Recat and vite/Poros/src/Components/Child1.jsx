@@ -7,6 +7,7 @@ const Child1 = (props)=>{
         <h2>{props.name}</h2>
         <h2>{props.age}</h2>
         <h3>{props.city}</h3>
+        <h3>{props.address}</h3>
         
         </>
     )

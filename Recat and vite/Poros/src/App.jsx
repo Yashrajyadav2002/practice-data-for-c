@@ -7,7 +7,10 @@ function App (){
   let info = {
     name:"yash",
     city:"bhopal",
-    contact:12345
+    contact:12345,
+    address:"banglore city",
+    password:35154755
+
   }
   return(
 
