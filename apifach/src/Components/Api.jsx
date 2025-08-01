@@ -4,7 +4,7 @@ const Api=()=>{
     let [apidata,setapidata]=useState([])
 
     useEffect(()=>{
-        axios.get('https://jsonplaceholder.typicode.com/photos').then((res)=>setapidata(res.data))
+        axios.get('http://localhost:3000/userdata').then((res)=>setapidata(res.data))
     },[])
     return(
         <>
@@ -12,15 +12,19 @@ const Api=()=>{
         <table border='2'>
             <tr>
                 <th>ID</th>
-                <th>TITLE</th>
-                <th>URL</th>
+                <th></th>
+                <th>age</th>
+                <th>contact</th>
+                <th>address</th>
             </tr>
             {
                 apidata.map((e)=>
                     <tr>
                         <td>{e.id}</td>
-                        <td>{e.title}</td>
-                        <td>{e.url}</td>
+                        <td>{e.name}</td>
+                        <td>{e.age}</td>
+                        <td>{e.contact}</td>
+                        <td>{e.address}</td>
                     </tr>
                 )
             }

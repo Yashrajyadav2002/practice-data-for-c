@@ -1,0 +1,22 @@
+{
+    "userdata":[
+        {
+            "name":"yash",
+            "age":25,
+            "contact":12345,
+            "address":"banglore"
+        },
+        {
+            "name":"sumit",
+            "age":25,
+            "contact":12345,
+            "address":"jabalpur"
+        },
+        {
+            "name":"amit",
+            "age":27,
+            "contact":25755,
+            "address":"mumbai"
+        }
+    ]
+}
