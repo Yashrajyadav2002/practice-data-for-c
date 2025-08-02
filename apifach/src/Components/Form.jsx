@@ -4,22 +4,20 @@ import { useNavigate } from "react-router-dom"
 
 
 function Form(){
-    let [frmdata,setfrmdata]=useState({
-        name:"",age:"",contact:"",address:""
-    })
+    let [frmdata,setfrmdata]=useState({})
     let nav = useNavigate()
 
     function handleinput(e){
-        const{name,value} = e.traget
+        const{name,value} = e.target
         setfrmdata({...frmdata,[name]:value})
     }
     function finalsubmit(e){
-        e.preventdefult()
+        e.preventDefault()
         axios.post('http://localhost:3000/userdata',frmdata)
         .than(()=>alert("inserted..."))
         .catch((err)=>alert(err))
 
-        nav('./apidata')
+        nav("/apidata")
     }
     return(
         <>
@@ -34,7 +32,7 @@ function Form(){
             <input type="text" name="contact" onChange={handleinput} /> <br /><br />
 
             <label htmlFor="">address</label>
-            <input type="text" name="adress" onChange={handleinput} /> <br /><br />
+            <input type="text" name="address" onChange={handleinput} /> <br /><br />
 
             <input type="submit" />
 
