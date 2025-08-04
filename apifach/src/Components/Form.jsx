@@ -8,8 +8,7 @@ function Form(){
     let nav = useNavigate()
 
     function handleinput(e){
-        const{name,value} = e.target
-        setfrmdata({...frmdata,[name]:value})
+        setfrmdata({...frmdata,[e.target.name]:e.target.value})
     }
     function finalsubmit(e){
         e.preventDefault()
