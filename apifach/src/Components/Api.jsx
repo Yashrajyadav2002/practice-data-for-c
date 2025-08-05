@@ -6,12 +6,12 @@ const Api=()=>{
     let [editdata,setEditdata]=useState({})
 
     useEffect(()=>{
-        axios.get('http://localhost:3000/userdata').than((res)=>console.log(setApidata(res.data)))
+        axios.get('http://localhost:3000/userdata').then((res)=>console.log(setApidata(res.data)))
     },[])
 
     function handledelete(id){
         axios.delete(`http://localhost:3000/userdata/${id}`)
-        .than(()=>alert("Deleted..!!!"))
+        .then(()=>alert("Deleted..!!!"))
     }
 
     function handleedit(e){

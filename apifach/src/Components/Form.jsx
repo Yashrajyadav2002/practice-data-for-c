@@ -13,7 +13,7 @@ function Form(){
     function finalsubmit(e){
         e.preventDefault()
         axios.post('http://localhost:3000/userdata',frmdata)
-        .than(()=>alert("inserted..."))
+        .then(()=>alert("inserted..."))
         .catch((err)=>alert(err))
 
         nav("/apidata")
