@@ -7,12 +7,18 @@ import React, { useRef } from 'react';
 
     let myref = useRef()
 
+    
+
     function inputfocus(){
       myref.current.focus()
     }
     function change(){
       myref.current.innerHTML="hy there"
       myref.current.style.backgroundColor="blue"
+    }
+    function magic (){
+      myref.current.innerHTML="Here the magic colour change"
+      myref.current.style.color="yellow"
     }
 
 
@@ -28,8 +34,13 @@ import React, { useRef } from 'react';
         <button onClick={inputfocus}>Tap here</button>
 
         <h1 ref={myref}>whoo are you</h1>
+        <h1 ref={myref}>i am yellow colour</h1>
 
-        <button onClick={change}>change</button>      </div>
+        <button onClick={change}>change</button>  
+
+        <button onClick={magic}>Magic</button>  
+        
+          </div>
     );
   }
   export default App
