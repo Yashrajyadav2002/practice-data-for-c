@@ -32,6 +32,7 @@ const Api=()=>{
                 <th>age</th>
                 <th>contact</th>
                 <th>address</th>
+                <th>Password</th>
                 <th>Delete</th>
                 <th>Edit</th>
             </tr>
@@ -43,6 +44,7 @@ const Api=()=>{
                         <td>{e.age}</td>
                         <td>{e.contact}</td>
                         <td>{e.address}</td>
+                        <td>{e.Password}</td>
                         <td><button onClick={()=>handledelete(e.id)}>delete</button></td>
                         <td><button onClick={()=>(setShowfrm(true),setEditdata(e))}>edit</button></td>
                     </tr>

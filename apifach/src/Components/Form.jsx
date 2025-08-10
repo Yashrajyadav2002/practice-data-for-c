@@ -33,6 +33,9 @@ function Form(){
             <label htmlFor="">address</label>
             <input type="text" name="address" onChange={handleinput} /> <br /><br />
 
+              <label htmlFor="">Password</label>
+            <input type="text" name="Password" onChange={handleinput} /> <br /><br />
+
             <input type="submit" />
 
             
