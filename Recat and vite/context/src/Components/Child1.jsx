@@ -6,6 +6,7 @@ import Child3 from "./Child3"
   return(
     <>
     <h1>This is child 1 </h1>
+    <p>this is the para fr child 1</p>
     <Child2/>
     <Child3/>
     
